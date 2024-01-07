@@ -23,17 +23,18 @@
       display: block;
     }
 
-    input {
+    input, textarea {
       position: absolute;
       background: none;
       border: none;
+      resize: none;
     }
 
-    #nome {
-      top:  150px;
-      left: 250px;
-      width: 330px;
+    textarea {
+      line-height: 30pt;
+      overflow: hidden;
     }
+
   </style>
 </head>
 <body>
@@ -43,7 +44,124 @@
     <img src="3.png" alt="" width="100%">
     <img src="4.png" alt="" width="100%">
 
-    <input type="text" id="nome">
+    <input type="text" id="nome" style="top: 150px; left: 250px; width: 330px">
+    <input type="text" id="tipo" style="top: 150px; left: 650px; width: 170px">
+    <input type="text" id="jogador" style="top: 150px; left: 900px; width: 170px">
+
+    <input type="text" id="idade" style="top: 195px; left: 260px; width: 110px">
+    <input type="text" id="tamanho" style="top: 195px; left: 470px; width: 120px">
+    <input type="text" id="determinacao" style="top: 195px; left: 720px; width: 350px">
+
+    <input type="text" id="saga" style="top: 250px; left: 250px; width: 820px">
+
+    <input type="text" id="cenario" style="top: 295px; left: 275px; width: 200px">
+    <input type="text" id="ano-atual" style="top: 295px; left: 580px; width: 100px">
+    <input type="text" id="concilio" style="top: 295px; left: 770px; width: 300px">
+
+    <input type="text" id="decrepitude" style="top: 350px; left: 360px; width: 280px">
+    <input type="text" id="distorcao" style="top: 350px; left: 790px; width: 280px">
+
+    <textarea type="text" rows="3" cols="63" id="efeitos-evelhecimento" style="top: 390px; left: 220px; max-width: 450px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="efeitos-distorcao" style="top: 390px; left: 660px; max-width: 450px;"></textarea>
+
+    <textarea type="text" rows="3" cols="63" id="virtudes" style="top: 555px; left: 660px; max-width: 450px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="defeitos" style="top: 730px; left: 660px; max-width: 450px;"></textarea>
+
+    <input type="text" id="atributos" style="top: 530px; left: 310px; width: 340px">
+    <input type="text" id="atributos-int" style="top: 565px; left: 375px; width: 60px">
+    <input type="text" id="atributos-per" style="top: 600px; left: 375px; width: 60px">
+    <input type="text" id="atributos-for" style="top: 635px; left: 375px; width: 60px">
+    <input type="text" id="atributos-vig" style="top: 670px; left: 375px; width: 60px">
+    <input type="text" id="atributos-pre" style="top: 705px; left: 375px; width: 60px">
+    <input type="text" id="atributos-com" style="top: 740px; left: 375px; width: 60px">
+    <input type="text" id="atributos-des" style="top: 775px; left: 375px; width: 60px">
+    <input type="text" id="atributos-rap" style="top: 810px; left: 375px; width: 60px">
+
+    <input type="text" id="atributos-int-desc" style="top: 565px; left: 450px; width: 200px">
+    <input type="text" id="atributos-per-desc" style="top: 600px; left: 450px; width: 200px">
+    <input type="text" id="atributos-for-desc" style="top: 635px; left: 450px; width: 200px">
+    <input type="text" id="atributos-vig-desc" style="top: 670px; left: 450px; width: 200px">
+    <input type="text" id="atributos-pre-desc" style="top: 705px; left: 450px; width: 200px">
+    <input type="text" id="atributos-com-desc" style="top: 740px; left: 450px; width: 200px">
+    <input type="text" id="atributos-des-desc" style="top: 775px; left: 450px; width: 200px">
+    <input type="text" id="atributos-rap-desc" style="top: 810px; left: 450px; width: 200px">
+
+    <input type="text" id="habilidade-1-exp" style="top: 915px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-1-desc" style="top: 910px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-1-esp" style="top: 910px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-1-nivel" style="top: 910px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-2-exp" style="top: 950px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-2-desc" style="top: 945px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-2-esp" style="top: 945px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-2-nivel" style="top: 945px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-3-exp" style="top: 988px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-3-desc" style="top: 980px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-3-esp" style="top: 980px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-3-nivel" style="top: 980px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-4-exp" style="top: 1025px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-4-desc" style="top: 1020px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-4-esp" style="top: 1020px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-4-nivel" style="top: 1020px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-5-exp" style="top: 1060px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-5-desc" style="top: 1055px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-5-esp" style="top: 1055px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-5-nivel" style="top: 1055px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-6-exp" style="top: 1095px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-6-desc" style="top: 1090px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-6-esp" style="top: 1090px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-6-nivel" style="top: 1090px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-7-exp" style="top: 1130px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-7-desc" style="top: 1125px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-7-esp" style="top: 1125px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-7-nivel" style="top: 1125px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-8-exp" style="top: 1170px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-8-desc" style="top: 1165px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-8-esp" style="top: 1165px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-8-nivel" style="top: 1165px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-9-exp" style="top: 1205px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-9-desc" style="top: 1200px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-9-esp" style="top: 1200px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-9-nivel" style="top: 1200px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-10-exp" style="top: 1240px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-10-desc" style="top: 1235px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-10-esp" style="top: 1235px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-10-nivel" style="top: 1235px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-11-exp" style="top: 1275px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-11-desc" style="top: 1270px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-11-esp" style="top: 1270px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-11-nivel" style="top: 1270px; left: 590px; width: 50px">
+
+    <input type="text" id="habilidade-12-exp" style="top: 1310px; left: 180px; width: 23px">
+    <input type="text" id="habilidade-12-desc" style="top: 1305px; left: 210px; width: 190px">
+    <input type="text" id="habilidade-12-esp" style="top: 1305px; left: 415px; width: 155px">
+    <input type="text" id="habilidade-12-nivel" style="top: 1305px; left: 590px; width: 50px">
+
+    <input type="text" id="nome-batismo" style="top: 880px; left: 800px; width: 280px">
+    <input type="text" id="ano-nascimento" style="top: 925px; left: 820px; width: 260px">
+    <input type="text" id="genero" style="top: 965px; left: 730px; width: 350px">
+    <input type="text" id="raca-nacionalidade" style="top: 1005px; left: 830px; width: 250px">
+    <input type="text" id="lugar-origem" style="top: 1050px; left: 800px; width: 280px">
+    <input type="text" id="religiao" style="top: 1090px; left: 730px; width: 350px">
+    <input type="text" id="titulo-profissao" style="top: 1135px; left: 810px; width: 270px">
+
+    <input type="text" id="altura" style="top: 1175px; left: 720px; width: 40px">
+    <input type="text" id="peso" style="top: 1175px; left: 810px; width: 40px">
+    <input type="text" id="cabelos" style="top: 1175px; left: 930px; width: 40px">
+    <input type="text" id="olhos" style="top: 1175px; left: 1035px; width: 40px">
+
+    <input type="text" id="mao-primaria" style="top: 1215px; left: 780px; width: 300px">
+
+
   </main>
 </body>
 </html>
