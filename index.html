@@ -12,6 +12,7 @@
 
     body {
       margin: 0;
+      position: relative;
     }
 
     main {
@@ -37,9 +38,63 @@
       overflow: hidden;
     }
 
+    #save-slots {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+    }
+
+    #save-slots div {
+      margin-bottom: 6px;
+    }
+
+    #save-slots button {
+      padding: 4px 6px;
+      border-radius: 0;
+      font-size: 12pt;
+      border: 0;
+    }
+
+    #save-slots .delete {
+      background-color: #911717;
+      color: white;
+    }
+
+    #save-slots .selected {
+      border: 1px solid green;
+    }
+
   </style>
 </head>
 <body>
+  <aside id="save-slots">
+    <div data-save-slot="1">
+      <button class="load">Slot 1</button>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </div>
+    <div data-save-slot="2">
+      <button class="load">Slot 2</button>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </div>
+    <div data-save-slot="3">
+      <button class="load">Slot 3</button>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </div>
+    <div data-save-slot="4">
+      <button class="load">Slot 4</button>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </div>
+    <div data-save-slot="5">
+      <button class="load">Slot 5</button>
+      <button class="save">Save</button>
+      <button class="delete">Delete</button>
+    </div>
+  </aside>
   <main>
     <img src="1.png" alt="" width="100%">
     <BR>
