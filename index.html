@@ -25,7 +25,16 @@
       display: block;
     }
 
-    input, textarea {
+    textarea{
+      position: absolute;
+      background: none;
+      text-align: center;
+      background-color:rgba(228, 217, 188, 1); 
+      resize: none;
+      border-radius: 10px;
+    }
+
+    input{
       position: absolute;
       background: none;
       border: none;
@@ -315,11 +324,11 @@
     <input type="text" id="decrepitude" style="top: 350px; left: 360px; width: 280px">
     <input type="text" id="distorcao" style="top: 350px; left: 790px; width: 280px">
 
-    <textarea type="text" rows="3" cols="63" id="efeitos-evelhecimento" style="top: 390px; left: 220px; max-width: 450px;"></textarea>
-    <textarea type="text" rows="3" cols="63" id="efeitos-distorcao" style="top: 390px; left: 660px; max-width: 450px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="efeitos-evelhecimento" style="top: 390px; left: 220px; max-width: 430px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="efeitos-distorcao" style="top: 390px; left: 660px; max-width: 430px;"></textarea>
 
-    <textarea type="text" rows="3" cols="63" id="virtudes" style="top: 555px; left: 660px; max-width: 450px;"></textarea>
-    <textarea type="text" rows="3" cols="63" id="defeitos" style="top: 730px; left: 660px; max-width: 450px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="virtudes" style="top: 555px; left: 660px; max-width: 430px;"></textarea>
+    <textarea type="text" rows="3" cols="63" id="defeitos" style="top: 730px; left: 660px; max-width: 430px;"></textarea>
 
     <input type="text" id="atributos" style="top: 530px; left: 310px; width: 340px">
     <input type="text" id="atributos-int" style="top: 565px; left: 375px; width: 60px">
@@ -449,8 +458,146 @@
     <input type="text" id="traco-personalidade4" style="top: 1869px; left: 710px; width: 220px">
     <input type="text" id="traco-personalidade-nivel4" style="top: 1869px; left: 940px; width: 65px">
       
-    <input type="text" id="reputacao-tipo4" style="top: 1965px; left: 310px; width: 55px">
-    <input type="checkbox" id="" style="top: 1968px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-leves-bloco" style="top: 1965px; left: 310px; width: 55px">
+    <input type="checkbox" id="ferimentos-leves-quantidade1" style="top: 1967px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-leves-quantidade2" style="top: 1967px; left: 416px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-leves-quantidade3" style="top: 1967px; left: 443px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-leves-quantidade4" style="top: 1967px; left: 471px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-leves-quantidade5" style="top: 1967px; left: 498px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-leves-notas" style="top: 1965px; left: 620px; width: 55px">
+  
+    <input type="text" id="ferimentos-medios-bloco" style="top: 2001px; left: 310px; width: 55px">
+    <input type="checkbox" id="ferimentos-medios-quantidade1" style="top: 2003px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-medios-quantidade2" style="top: 2003px; left: 416px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-medios-quantidade3" style="top: 2003px; left: 443px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-medios-quantidade4" style="top: 2003px; left: 471px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-medios-quantidade5" style="top: 2003px; left: 498px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-medios-notas" style="top: 2001px; left: 620px; width: 55px">
+
+    <input type="text" id="ferimentos-graves-bloco" style="top: 2036px; left: 310px; width: 55px">
+    <input type="checkbox" id="ferimentos-graves-quantidade1" style="top: 2038px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-graves-quantidade2" style="top: 2038px; left: 416px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-graves-quantidade3" style="top: 2038px; left: 443px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-graves-quantidade4" style="top: 2038px; left: 471px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-graves-quantidade5" style="top: 2038px; left: 498px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-graves-notas" style="top: 2036px; left: 620px; width: 55px">
+
+    <input type="text" id="ferimentos-incapacitado-bloco" style="top: 2072px; left: 310px; width: 55px">
+    <input type="checkbox" id="ferimentos-incapacitado-quantidade1" style="top: 2074px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-incapacitado-quantidade2" style="top: 2074px; left: 416px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-incapacitado-quantidade3" style="top: 2074px; left: 443px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-incapacitado-quantidade4" style="top: 2074px; left: 471px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-incapacitado-quantidade5" style="top: 2074px; left: 498px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-incapacitado-notas" style="top: 2072px; left: 620px; width: 55px">
+
+    <input type="text" id="ferimentos-morto-bloco" style="top: 2108px; left: 310px; width: 55px">
+    <input type="checkbox" id="ferimentos-morto-quantidade1" style="top: 2110px; left: 389px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-morto-quantidade2" style="top: 2110px; left: 416px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-morto-quantidade3" style="top: 2110px; left: 443px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-morto-quantidade4" style="top: 2110px; left: 471px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="ferimentos-morto-quantidade5" style="top: 2110px; left: 498px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="text" id="ferimentos-morto-notas" style="top: 2108px; left: 620px; width: 55px">
+
+    <input type="checkbox" id="fadiga-ofegante" style="top: 1988px; left: 720px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="fadiga-fatigado" style="top: 2020px; left: 720px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="fadiga-cansado" style="top: 2052px; left: 720px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="fadiga-atordoado" style="top: 2083px; left: 720px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+    <input type="checkbox" id="fadiga-inconsciente" style="top: 2115px; left: 720px; box-sizing: border-box; border: none; background: none; transform: rotate(45deg);">
+
+    <input type="text" id="absorcao" style="top: 2165px; left: 210px; width: 800px">
+    <input type="text" id="absorcao-armadura1" style="top: 2215px; left: 205px; width: 220px">
+    <input type="text" id="absorcao-absorcao1" style="top: 2215px; left: 490px; width: 140px">
+    <input type="text" id="absorcao-modificadores1" style="top: 2215px; left: 720px; width: 130px">
+    <input type="text" id="absorcao-carga1" style="top: 2215px; left: 970px; width: 50px">
+
+    <input type="text" id="absorcao-armadura2" style="top: 2263px; left: 205px; width: 220px">
+    <input type="text" id="absorcao-absorcao2" style="top: 2263px; left: 490px; width: 140px">
+    <input type="text" id="absorcao-modificadores2" style="top: 2263px; left: 720px; width: 130px">
+    <input type="text" id="absorcao-carga2" style="top: 2263px; left: 970px; width: 50px">
+
+    <input type="text" id="armas" style="top: 2320px; left: 190px; width: 800px">
+
+    <input type="text" id="armas-nome1" style="top: 2390px; left: 110px; width: 110px">
+    <input type="text" id="armas-nome2" style="top: 2425px; left: 110px; width: 110px">
+    <input type="text" id="armas-nome3" style="top: 2462px; left: 110px; width: 110px">
+
+    <input type="text" id="armas-rap1" style="top: 2390px; left: 230px; width: 26px">
+    <input type="text" id="armas-rap2" style="top: 2425px; left: 230px; width: 26px">
+    <input type="text" id="armas-rap3" style="top: 2462px; left: 230px; width: 26px">
+
+    <input type="text" id="armas-arma1" style="top: 2390px; left: 275px; width: 26px">
+    <input type="text" id="armas-arma2" style="top: 2425px; left: 275px; width: 26px">
+    <input type="text" id="armas-arma3" style="top: 2462px; left: 275px; width: 26px">
+
+    <input type="text" id="armas-fardo1" style="top: 2390px; left: 315px; width: 26px">
+    <input type="text" id="armas-fardo2" style="top: 2425px; left: 315px; width: 26px">
+    <input type="text" id="armas-fardo3" style="top: 2462px; left: 315px; width: 26px">
+    
+    <input type="text" id="armas-iniciativa1" style="top: 2390px; left: 360px; width: 36px">
+    <input type="text" id="armas-iniciativa2" style="top: 2425px; left: 360px; width: 36px">
+    <input type="text" id="armas-iniciativa3" style="top: 2462px; left: 360px; width: 36px">
+
+    <input type="text" id="armas-des1" style="top: 2390px; left: 410px; width: 25px">
+    <input type="text" id="armas-des2" style="top: 2425px; left: 410px; width: 25px">
+    <input type="text" id="armas-des3" style="top: 2462px; left: 410px; width: 25px">
+
+    <input type="text" id="armas-habilidade1" style="top: 2390px; left: 455px; width: 45px">
+    <input type="text" id="armas-habilidade2" style="top: 2425px; left: 455px; width: 45px">
+    <input type="text" id="armas-habilidade3" style="top: 2462px; left: 455px; width: 45px">
+
+    <input type="text" id="armas-arma4" style="top: 2390px; left: 523px; width: 25px">
+    <input type="text" id="armas-arma5" style="top: 2425px; left: 523px; width: 25px">
+    <input type="text" id="armas-arma6" style="top: 2462px; left: 523px; width: 25px">
+
+    <input type="text" id="armas-ataque1" style="top: 2390px; left: 570px; width: 35px">
+    <input type="text" id="armas-ataque2" style="top: 2425px; left: 570px; width: 35px">
+    <input type="text" id="armas-ataque3" style="top: 2462px; left: 570px; width: 35px">
+
+    <input type="text" id="armas-rap4" style="top: 2390px; left: 620px; width: 30px">
+    <input type="text" id="armas-rap5" style="top: 2425px; left: 620px; width: 30px">
+    <input type="text" id="armas-rap6" style="top: 2462px; left: 620px; width: 30px">
+
+    <input type="text" id="armas-habilidade4" style="top: 2390px; left: 665px; width: 50px">
+    <input type="text" id="armas-habilidade5" style="top: 2425px; left: 665px; width: 50px">
+    <input type="text" id="armas-habilidade6" style="top: 2462px; left: 665px; width: 50px">
+
+    <input type="text" id="armas-arma4" style="top: 2390px; left: 730px; width: 30px">
+    <input type="text" id="armas-arma5" style="top: 2425px; left: 730px; width: 30px">
+    <input type="text" id="armas-arma6" style="top: 2462px; left: 730px; width: 30px">
+
+    <input type="text" id="armas-defesa1" style="top: 2390px; left: 775px; width: 50px">
+    <input type="text" id="armas-defesa2" style="top: 2425px; left: 775px; width: 50px">
+    <input type="text" id="armas-defesa3" style="top: 2462px; left: 775px; width: 50px">
+  
+    <input type="text" id="armas-for1" style="top: 2390px; left: 835px; width: 20px">
+    <input type="text" id="armas-for2" style="top: 2425px; left: 835px; width: 20px">
+    <input type="text" id="armas-for3" style="top: 2462px; left: 835px; width: 20px">
+
+    <input type="text" id="armas-arma7" style="top: 2390px; left: 875px; width: 25px">
+    <input type="text" id="armas-arma8" style="top: 2425px; left: 875px; width: 25px">
+    <input type="text" id="armas-arma9" style="top: 2462px; left: 875px; width: 25px">
+
+    <input type="text" id="armas-dano1" style="top: 2390px; left: 920px; width: 25px">
+    <input type="text" id="armas-dano2" style="top: 2425px; left: 920px; width: 25px">
+    <input type="text" id="armas-dano3" style="top: 2462px; left: 920px; width: 25px">
+
+    <input type="text" id="armas-carga1" style="top: 2390px; left: 960px; width: 25px">
+    <input type="text" id="armas-carga2" style="top: 2425px; left: 960px; width: 25px">
+    <input type="text" id="armas-carga3" style="top: 2462px; left: 960px; width: 25px">
+
+    <input type="text" id="armas-alcance1" style="top: 2390px; left: 995px; width: 45px">
+    <input type="text" id="armas-alcance2" style="top: 2425px; left: 995px; width: 45px">
+    <input type="text" id="armas-alcance3" style="top: 2462px; left: 995px; width: 45px">
+  
+    <input type="text" id="equipamentos" style="top: 2510px; left: 255px; width: 800px">
+
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2540px; left: 110px; width: 310px; height: 140px; line-height: 35px;"></textarea>
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2540px; left: 430px; width: 300px; height: 140px; line-height: 35px;"></textarea>
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2540px; left: 750px; width: 290px; height: 140px; line-height: 35px;"></textarea>
+
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2730px; left: 110px; width: 310px; height: 140px; line-height: 35px;"></textarea>
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2730px; left: 430px; width: 300px; height: 140px; line-height: 35px;"></textarea>
+    <textarea type="text" rows="2" cols="30" id="efeitos-evelhecimento" style="top: 2730px; left: 750px; width: 290px; height: 140px; line-height: 35px;"></textarea>
 
   </main>
 </body>
